@@ -38,7 +38,7 @@ def main() -> int:
     print(f"{Fore.GREEN}[>] Starting whitelisting process...\n")
     uid = get_windows_uuid()
     if not uid:
-        print(f"{Fore.RED}[!] Could not determine machine UUID.")
+        print(f"{Fore.RED}[!] Could not determine machine UUID. [Windows only]")
         print(f"{Fore.YELLOW}[!] If this persists, please contact support.")
         return 1
     print(
