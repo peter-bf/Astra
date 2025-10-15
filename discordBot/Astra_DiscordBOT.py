@@ -20,9 +20,9 @@ load_dotenv()
 # Configuration / Setup
 SHOPPY_API_KEY = os.getenv('SHOPPY_API_KEY')
 DISCORD_TOKEN = os.getenv('DISCORD_TOKEN')
+GUILD_ID = int(os.getenv('GUILD_ID', '0')) # Change to your server ID
+LOG_CHANNEL_ID = int(os.getenv('LOG_CHANNEL_ID', '0')) # Change to your log channel ID in your server
 
-GUILD_ID = int(os.getenv('GUILD_ID', '000000000000000000'))
-LOG_CHANNEL_ID = int(os.getenv('LOG_CHANNEL_ID', '000000000000000000'))
 DATABASE_FILE = Path('database.json')
 WHITELIST_FILE = Path('WhitelistsSerialNumbers.txt')
 
@@ -36,7 +36,6 @@ IMAGES_DIR = Path('images')
 IMAGES_DIR.mkdir(exist_ok=True)
 
 WHITELIST_UPDATE_COOLDOWN = 5  # days
-
 REQUEST_TIMEOUT = 15  # seconds
 ROLE_NAME = "Astra"
 
@@ -94,7 +93,7 @@ def generate_whitelist(json_list: list):
         if os.path.exists(web_dir):
             shutil.copyfile(WHITELIST_FILE, f"{web_dir}/digits.txt")
         else:
-            raise RuntimeError("Web server is not set up! Missing /var/www/html/whitelists")
+            raise RuntimeError("Web server is not set up! Missing /var/www/html/whitelists directory")
 
     except Exception as e:
         print(f"Whitelist generation error: {e}")
