@@ -1,6 +1,12 @@
-# Astra
+<div align="center">
+  <h1>Astra</h1>
+</div>
 
 ![](.github/banner.png)
+
+# Features
+
+![](.github/bot_logging.png)
 
 ## Installation
 
