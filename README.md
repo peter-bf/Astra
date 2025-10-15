@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>Astra</h1>
+  <h1>Astra 🌌</h1>
 </div>
 
 ![](.github/banner.png)
