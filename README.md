@@ -29,7 +29,7 @@ For information about the build system and executables, see the
 
 The **Astra Discord Bot** serves as the bridge between **Astra’s backend infrastructure**, **Shoppy.gg’s purchase API**, and the **Discord user network**.  
 
-For all specifications and technical details options, see [Discord Bot README](https://github.com/peter-bf/Astra/tree/master/dist#readme).
+For all specifications and technical details options, see [Discord Bot README](https://github.com/peter-bf/Astra/tree/master/discordBot).
 
 It operates as an autonomous verification and access control daemon, continuously synchronizing user data across systems.
 
