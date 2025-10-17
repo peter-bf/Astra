@@ -4,8 +4,19 @@
 
 ![](.github/banner.png)
 
+Astra is a Windows‑native automation stack for Roblox limited trading. It keeps value data current, schedules outbound trade scans with configurable RAP/value thresholds, and supervises companion binaries (Outbound Checker, Olympian) with automatic restart. Access is enforced via machine‑bound licensing (hardware‑locked whitelist), while an optional Discord bot handles buyer provisioning, whitelisting commands, and operational logging. Built for headless execution with a simple INI‑based configuration.
+
 ## Features
 
+
+- Outbound trade scans with configurable loss thresholds (RAP/value/both)
+- Automatic/scheduled value file updates
+- Hardware‑locked whitelist licensing per buyer
+- Discord bot integration for onboarding, whitelisting, and logs
+- Process orchestration for Olympian and Outbound Checker (auto‑launch/restart)
+- Version check with update prompts
+- Simple configuration via `src/Astra_Settings.ini`
+- Headless operation with minimal setup
 
 ## Installation
 
